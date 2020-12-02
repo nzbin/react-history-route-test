@@ -6,7 +6,7 @@ import Profile from './pages/Profile';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar />
       <div className="container mt-2" style={{ marginTop: 40 }}>
         <Switch>
